@@ -58,8 +58,8 @@ const decreaseQty = (id) => {
       <ScrollProgress />
       <BackToTop />
       <Navbar setOpenCart={setOpenCart} cart={cart} />
-      <MenuSection addToCart={addToCart} />
       <Hero />
+      <MenuSection addToCart={addToCart} />
       <About />
       <Testimonials />
       <Location />

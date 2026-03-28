@@ -61,67 +61,49 @@ const Navbar = ({ setOpenCart, cart }) => {
               PEDIR AHORA
             </a>
           </div>
-         <div style={{ position: 'relative', cursor: 'pointer' }} onClick={() => setOpenCart(true)}>
+        <div style={{ position: 'relative', cursor: 'pointer' }} onClick={() => setOpenCart(true)}>
           <div 
-  onClick={() => setOpenCart(true)}
-  style={{
-    position: 'relative',
-    cursor: 'pointer',
-    padding: '10px',
-    borderRadius: '50%',
-    background: 'rgba(255,255,255,0.05)',
-    border: '1px solid var(--glass-border)',
-    transition: 'all 0.3s ease',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }}
-  onMouseEnter={e => {
-    e.currentTarget.style.transform = 'scale(1.1)';
-    e.currentTarget.style.boxShadow = '0 0 15px rgba(241,180,52,0.5)';
-  }}
-  onMouseLeave={e => {
-    e.currentTarget.style.transform = 'scale(1)';
-    e.currentTarget.style.boxShadow = 'none';
-  }}
->
-  <ShoppingCart size={20} color="var(--primary)" />
+            style={{
+              padding: '10px',
+              borderRadius: '50%',
+              background: 'rgba(255,255,255,0.05)',
+              border: '1px solid var(--glass-border)',
+              transition: 'all 0.3s ease',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.transform = 'scale(1.1)';
+              e.currentTarget.style.boxShadow = '0 0 15px rgba(241,180,52,0.5)';
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.transform = 'scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+            }}
+          >
+            <ShoppingCart size={20} color="var(--primary)" />
 
-  {/* CONTADOR */}
-  {cart.length > 0 && (
-    <span style={{
-      position: 'absolute',
-      top: '-5px',
-      right: '-5px',
-      background: 'var(--primary)',
-      color: 'black',
-      borderRadius: '50%',
-      fontSize: '10px',
-      padding: '3px 6px',
-      fontWeight: 'bold',
-      boxShadow: '0 0 10px rgba(241,180,52,0.8)'
-    }}>
-      {cart.length}
-    </span>
-  )}
-</div>
-
-  {cart.length > 0 && (
-    <span style={{
-      position: 'absolute',
-      top: '-5px',
-      right: '-10px',
-      background: 'var(--primary)',
-      color: 'black',
-      borderRadius: '50%',
-      fontSize: '10px',
-      padding: '2px 6px',
-      fontWeight: 'bold'
-    }}>
-      {cart.length}
-    </span>
-  )}
-</div>
+            {/* CONTADOR */}
+            {cart.length > 0 && (
+              <span style={{
+                position: 'absolute',
+                top: '-5px',
+                right: '-5px',
+                background: 'var(--primary)',
+                color: 'black',
+                borderRadius: '50%',
+                fontSize: '10px',
+                padding: '3px 6px',
+                fontWeight: 'bold',
+                boxShadow: '0 0 10px rgba(241,180,52,0.8)',
+                zIndex: 2
+              }}>
+                {cart.length}
+              </span>
+            )}
+          </div>
+        </div>
   
           {/* Mobile Toggle */}
           <div className="mobile-toggle" style={{ display: 'block', cursor: 'pointer' }} onClick={() => setIsOpen(!isOpen)}>

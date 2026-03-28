@@ -1,4 +1,3 @@
-import { MenuItem } from "semantic-ui-react";
 
 export const MENU_CATEGORIES = ['Todos', 'Signature Rolls', 'Clásicos', 'Bowls & Pokes'];
 
@@ -9,7 +8,7 @@ export const MENU_ITEMS = [
     category: "Signature Rolls",
     price: "$32.000",
     description: "Nuestra creación ganadora. Salmón fresco, crema de queso, aguacate, tope de atún flameado y salsa acevichada especial.",
-    image: "https://images.unsplash.com/photo-1559144490-8328294facd8?q=80&w=1974&auto=format&fit=crop",
+    image: "sushi_master_roll_2025.png",
     popular: true
   },
   {

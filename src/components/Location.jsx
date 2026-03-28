@@ -37,19 +37,17 @@ const Location = () => (
           </div>
         </div>
         
-        <div style={{ height: '500px', borderRadius: 'var(--radius)', overflow: 'hidden', position: 'relative', border: '1px solid var(--border)' }}>
-          <img 
-            src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=2033&auto=format&fit=crop" 
-            alt="Map Abstract" 
-            style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.4, filter: 'grayscale(100%)' }} 
-          />
-          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'radial-gradient(circle, transparent 20%, #000 100%)' }}></div>
-          <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center' }}>
-            <div style={{ background: 'var(--primary)', width: '64px', height: '64px', borderRadius: '50%', display: 'grid', placeItems: 'center', margin: '0 auto 1.5rem auto', boxShadow: '0 0 30px rgba(241, 180, 52, 0.5)' }}>
-              <MapPin size={32} color="black" />
-            </div>
-            <p style={{ fontWeight: 800, letterSpacing: '2px', fontSize: '0.9rem' }}>SUSHI BLOCK NEIVA</p>
-          </div>
+        <div style={{ height: '500px', borderRadius: 'var(--radius)', overflow: 'hidden', position: 'relative', border: '1px solid var(--border)', background: '#111' }}>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.6617!2d-75.289!3d2.937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b749!2sCra.%2016%20%2334a-10%2C%20Neiva%2C%20Huila!5e0!3m2!1sen!2sco!4v1700000000000!5m2!1sen!2sco" 
+            width="100%" 
+            height="100%" 
+            style={{ border: 0, filter: 'grayscale(1) invert(0.9) contrast(1.2) opacity(0.6)' }} 
+            allowFullScreen="" 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', background: 'radial-gradient(circle, transparent 20%, #000 120%)' }}></div>
         </div>
       </div>
     </div>
